@@ -37,3 +37,24 @@
 
 ---
 
+
+# 🧾 Performance Report Update
+**Generated on:** 2025-11-01 09:40:32
+
+| Metric | pandas | polars |
+|:--------|:--------:|:--------:|
+| Load Time (s) | 0.49 | 0.05 |
+| Rolling Metrics Time (s) | 0.03 | 0.01 |
+
+| Parallel Method | Execution Time (s) |
+|:-----------------|------------------:|
+| Threading | 0.11 |
+| Multiprocessing | 2.97 |
+
+**Observations:**
+- Polars loaded data ~9.85× faster than Pandas.
+- Polars rolling metrics were ~2.71× faster.
+- Multiprocessing outperformed threading by ~0.04×.
+
+---
+
